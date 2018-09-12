@@ -1,0 +1,39 @@
+body {
+    background:  #8f8b8b;
+}
+
+header {
+  background: #8f8b8b;
+  color: #4b81b3;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+
+
+h1 {
+    font-size:40px;
+     font-weight: bold; 
+}
+
+ul {
+    list-style-type: disc;
+}
+
+main {
+    margin: 25px;
+}
+
+p {
+    font-size:25px;
+
+}
+
+footer {
+    background: #8f8b8b;
+    color: #4b81b3;
+    padding: 50px;
+    font-size:40px;
+    font-weight: bold;
+    text-align: center;
+}
