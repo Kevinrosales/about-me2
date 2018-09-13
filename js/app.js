@@ -1,23 +1,6 @@
 'use strict'
-// alert('Hello welcome to my website');
 
-// var username = prompt('what\'s your name?');
-// console.log(username);
-
-// var place = prompt('where is a place you would like to visit?');
-// console.log(place);
-
-// var music = prompt('what is your favorite music genre');
-// console.log(music);
-
-// var drink = prompt ('what is your favorite drink');
-// console.log(drink);
-
-// alert('Hello there '+username+
-// ' maybe someday we can drink some '+drink+
-// ' while we listen to '+music+' and act on our impulsive nature and buy some tickets too '+place+'');
-
-var answer1, answer2, answer3, answer4, answer5, na,
+var answer1, answer2, answer3, answer4, answer5, answer6, answer7, na;
 
 na = ('whoah there this is a yes or no question')
 
@@ -67,3 +50,29 @@ else if (answer5 ==='no' || answer5 ==='n'){
     alert('Yeah I cant eat teriaki without thinking about the time I got food poisoning from it.')
 }
 console.log('answer five ' + answer5);
+
+
+var rightAnswer = 19;
+var trys = 3;
+
+answer6 = prompt('out of 1 through 20 what is my favorite number? ill give you 4 trys.');
+while(trys >= 1)
+{
+    if(parseInt(answer6)===rightAnswer){
+        alert('Holy cow yeah thats right my favorite number is 19!');
+        trys = 0;
+        break;
+    }
+    else if(answer6 > rightAnswer && answer6 <= 20)
+    {
+        alert('your over guessing but your super close.');
+        trys--;
+        answer6 = prompt('out of 1 through 20 what is my favorite number?');
+    }
+    else if(answer6 < rightAnswer && answer6 >= 19)
+    {
+        alert('nope its gonna be higher than that ');
+        trys--;
+        answer6 = prompt('out of 1 through 20 what is my favorite number?');
+    }
+}
